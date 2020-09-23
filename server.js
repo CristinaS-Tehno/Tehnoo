@@ -5,6 +5,7 @@ const path = require('path');
 const EventHubReader = require('./scripts/event-hub-reader.js');
 
 const iotHubConnectionString = process.env.IotHubConnectionString;
+set IotHubConnectionString=HostName=Tehno.azure-devices.net;SharedAccessKeyName=service;SharedAccessKey=npycigPkkL67x4pyQEU6y8DFSuQVW3GP/kR4EDkp26s=;
 if (!iotHubConnectionString) {
   console.error(`Environment variable IotHubConnectionString must be specified.`);
   return;
